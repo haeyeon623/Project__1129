@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="수정하기"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_change"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="판매 상태 변경"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="삭제하기"
+        app:showAsAction="always" />
+</menu>

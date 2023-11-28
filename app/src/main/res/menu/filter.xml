@@ -1,0 +1,24 @@
+<!-- res/menu/filter_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/top_refresh"
+        android:icon="@drawable/refresh"
+        android:title="새로고침"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/top_filter"
+        android:icon="@drawable/filter"
+        android:title="필터"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_exclude_sold_out"
+                android:checkable="true"
+                android:title="판매완료 제외하기"
+                app:showAsAction="never" />
+        </menu>
+
+    </item>
+</menu>

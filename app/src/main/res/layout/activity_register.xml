@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_background">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/join_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="157dp"
+                android:ems="10"
+                android:fontFamily="@font/gmarketmedium"
+                android:hint="닉네임"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_text" />
+
+            <EditText
+                android:id="@+id/join_email"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="54dp"
+                android:ems="15"
+                android:fontFamily="@font/gmarketmedium"
+                android:hint="이메일"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerMonth" />
+
+            <EditText
+                android:id="@+id/join_password"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="157dp"
+                android:ems="10"
+                android:fontFamily="@font/gmarketmedium"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_email" />
+
+            <EditText
+                android:id="@+id/editPWConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="157dp"
+                android:ems="10"
+                android:fontFamily="@font/gmarketmedium"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_password" />
+
+            <Button
+                android:id="@+id/join"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/darkblue"
+                android:fontFamily="@font/gmarketbold"
+                android:text="회원가입"
+                android:textColor="@color/white"
+                app:cornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editPWConfirm" />
+
+            <EditText
+                android:id="@+id/join_name"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="157dp"
+                android:ems="10"
+                android:fontFamily="@font/gmarketmedium"
+                android:hint="이름"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_nickname" />
+
+            <ImageView
+                android:id="@+id/join_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/join_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gmarketbold"
+                android:text="회원가입"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_logo" />
+
+            <Spinner
+                android:id="@+id/spinnerYear"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="90dp"
+                android:autofillHints="2000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_name" />
+
+            <Spinner
+                android:id="@+id/spinnerMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:autofillHints="11"
+                app:layout_constraintEnd_toStartOf="@+id/spinnerDay"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/birthtext" />
+
+            <Spinner
+                android:id="@+id/spinnerDay"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="83dp"
+                android:autofillHints="24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerYear" />
+
+            <TextView
+                android:id="@+id/birthtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="55dp"
+                android:fontFamily="@font/gmarketmedium"
+                android:text="생년월일"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/spinnerYear"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/join_name" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/pocket"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

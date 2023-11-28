@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Project__" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name = "colorPrimary">@color/darkblue</item>
+        <item name = "colorPrimaryDark">@color/darkblue</item>
+        <item name = "colorPrimaryFixed">@color/darkblue</item>
+        <item name="android:fontFamily">@font/gmarketmedium</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Project__" parent="Base.Theme.Project__" />
+</resources>
